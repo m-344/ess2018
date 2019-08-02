@@ -1,0 +1,33 @@
+header {
+    color: red;
+    font-size: 1.8rem;
+}
+
+div.container {
+    width: 600px;
+}
+
+div.comparison-slider {
+    height: 350px;
+}
+
+#rendering {
+    height: 300px;
+    border: 1px solid #666666;
+    margin-bottom: 1.5rem;
+    overflow: scroll;
+}
+
+#rendering.highlighted .del {
+    fill: red;
+    stroke: red;
+}
+
+#rendering.highlighted .add {
+    fill: green;
+    stroke: green;
+}
+
+#rendering.highlighted .unclear {
+    opacity: .4;
+}

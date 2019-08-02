@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+		<meta content="width=device-width,initial-scale=1.0" name="viewport" />
+		<title>FEDE (Fancy Enriched Digital Edition)</title>
+
+		<link href="resources/css/spectre.min.css" rel="stylesheet" />
+		<link href="resources/css/spectre-exp.min.css" rel="stylesheet" />
+		<link href="resources/css/spectre-icons.min.css" rel="stylesheet" />
+		<link href="resources/css/main.css" rel="stylesheet" />
+
+	</head>
+	<body>
+		<header>I'm the <span class="x">heading</span> of our fancy edition</header>
+		<div class="container">
+			<div class="columns">
+				<div class="column col-12">
+					<h2>Introduction</h2>
+					<p>Hello, welcome to the enhanced edition.</p>
+					<div class="highlighted" id="rendering"> </div>
+					<div class="form-group float-right">
+						<label class="form-switch">
+							<input checked="checked" id="showHighlights" type="checkbox" />
+							<i class="form-icon"></i> Highlight differences </label>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-primary" id="showAutograph">Autograph</button>
+						<button class="btn" id="showHering">Hering Copy</button>
+					</div>
+					<div style="height: .3rem;"></div>
+					<div class="btn-group" style="margin-bottom: 1.5rem;">
+						<button class="btn btn-primary btn-sm" id="showDeletions">First version</button>
+						<button class="btn btn-sm" id="showAdditions">CPE Bach revision</button>
+					</div>
+					<h2>Source Descriptions</h2>
+					<p> This is our famous source description, now have a look at measure 98 of "Et resurrexit". </p>
+
+					<div class="comparison-slider">
+						<figure class="comparison-before">
+							<img alt="macOS Sierra Wallpaper" class="rounded" id="image1" src="resources/pix/Autograph_Snippet1_1924.jpg" />
+							<div class="comparison-label" id="image1label">1924</div>
+						</figure>
+						<figure class="comparison-after">
+							<img alt="macOS Sierra Wallpaper" class="filter-grayscale rounded" id="image2" src="resources/pix/Autograph_Snippet1_2008.jpg" />
+							<div class="comparison-label" id="image2label">2008</div>
+							<textarea class="comparison-resizer" readonly=""></textarea>
+						</figure>
+					</div>
+
+					<div class="columns">
+						<div class="column col-4">
+							<div class="form-group">
+								<label class="form-radio">
+									<input checked="checked" name="rightImage" type="radio" value="0" />
+									<i class="form-icon"></i> Autograph (2008) </label>
+								<label class="form-radio">
+									<input name="rightImage" type="radio" value="1" />
+									<i class="form-icon"></i> Autograph (1924) </label>
+								<label class="form-radio">
+									<input name="rightImage" type="radio" value="2" />
+									<i class="form-icon"></i> Autograph (1895) </label>
+								<label class="form-radio">
+									<input name="rightImage" type="radio" value="3" />
+									<i class="form-icon"></i> Copy by J.F. Hering </label>
+							</div>
+						</div>
+						<div class="column col-4"></div>
+						<div class="column col-4" style="margin-bottom: 1.5rem;">
+							<div class="form-group" style="text-align: right;">
+								<label class="form-radio">
+									<input checked="checked" name="leftImage" type="radio" value="0" />
+									<i class="form-icon"></i> Autograph (2008) </label>
+								<label class="form-radio">
+									<input name="leftImage" type="radio" value="1" />
+									<i class="form-icon"></i> Autograph (1924) </label>
+								<label class="form-radio">
+									<input name="leftImage" type="radio" value="2" />
+									<i class="form-icon"></i> Autograph (1895) </label>
+								<label class="form-radio">
+									<input name="leftImage" type="radio" value="3" />
+									<i class="form-icon"></i> Copy by J.F. Hering </label>
+							</div>
+						</div>
+					</div>
+
+					<p> Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. </p>
+				</div>
+			</div>
+		</div>
+		<script src="./resources/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="./resources/js/verovio-toolkit.js" type="text/javascript"></script>
+		<!--<script type="text/javascript" src="./resources/js/fabric-2.3.6.min.js"></script>-->
+		<script src="./resources/js/app.js" type="text/javascript"></script>
+
+	</body>
+</html>
