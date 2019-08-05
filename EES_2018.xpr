@@ -137,6 +137,7 @@
     </meta>
     <projectTree name="EES_2018.xpr">
         <folder path="."/>
-        <folder path="../../../v_tests/"/>
+        <folder path="../vrv_tests_2/"/>
+        <folder path="file:/L:/Programmieren/cmd/"/>
     </projectTree>
 </project>
